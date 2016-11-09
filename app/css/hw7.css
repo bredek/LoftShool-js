@@ -1,0 +1,55 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  color: black; }
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #5d5d5d;
+  margin-bottom: 0; }
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: darkgrey;
+  margin-top: 0;
+  margin-bottom: 40px; }
+
+section.accordeon .accordeon-wrapper {
+  width: 50%;
+  margin: 100px auto; }
+  section.accordeon .accordeon-wrapper ul.accordeon-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    section.accordeon .accordeon-wrapper ul.accordeon-list li.accordeon-item {
+      background-color: #e7e7e7;
+      border-radius: 15px;
+      margin: 20px auto;
+      padding: 20px;
+      cursor: pointer; }
+      section.accordeon .accordeon-wrapper ul.accordeon-list li.accordeon-item:hover a.accordeon-trigger {
+        color: #dd5831; }
+      section.accordeon .accordeon-wrapper ul.accordeon-list li.accordeon-item a.accordeon-trigger {
+        cursor: pointer;
+        color: #4f4f4f;
+        font-size: 18px;
+        font-weight: 500;
+        transition: .3s ease-in-out color; }
+      section.accordeon .accordeon-wrapper ul.accordeon-list li.accordeon-item p.accordeon-content {
+        display: block;
+        max-height: 0;
+        margin: 0;
+        padding-top: 5px;
+        overflow-y: hidden;
+        -webkit-transition: max-height 0.5s ease-in-out;
+        -moz-transition: max-height 0.5s ease-in-out;
+        -o-transition: max-height 0.5s ease-in-out;
+        transition: max-height 0.5s ease-in-out;
+        line-height: 26px;
+        font-weight: 300; }
+        section.accordeon .accordeon-wrapper ul.accordeon-list li.accordeon-item p.accordeon-content.show-accordeon-item {
+          max-height: 50px;
+          animation: accordeonOpace .5s; }

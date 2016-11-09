@@ -58,4 +58,4 @@ container.deleteTextNodes();
 
     }
 
-}(document.body))
+}(document.body));
