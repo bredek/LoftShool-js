@@ -33,3 +33,20 @@ window.addEventListener('load', function () {
         }
     });
 });
+
+function generateRandom(from, to) {
+    return Math.ceil(Math.random() * (from-to)) + to;
+}
+
+function generateNewDiv() {
+    var newDiv = document.createElement('div');
+    var parent = document.querySelector('.wrapper-generator');
+    parent.appendChild(newDiv);
+    newDiv.innerText = generateRandom(100, 300) + ", " + generateRandom(100, 300);
+}
+
+
+var generateID = document.getElementById('generateBtn');
+generateID.addEventListener('click', function (e) {
+    generateNewDiv();
+});
