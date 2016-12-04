@@ -1,0 +1,20 @@
+{
+  "name": "loftschool-js-intense",
+  "description": "js homeworks repo",
+  "main": "main.js",
+  "authors": [
+    "eugene.breyduk"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/eugene-bredyuk/LoftShool-js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  }
+}

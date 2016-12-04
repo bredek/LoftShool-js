@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>HW #11_1</title>
+    <script src="../bower_components/handlebars/handlebars.min.js"></script>
+</head>
+<body>
+<!--Here goes sample for testing handlebars-->
+<!--<script id="entry-template" type="text/x-handlebars-template">-->
+<!--<div class="entry">-->
+<!--<h1>title goes here -> {{title}}</h1>-->
+<!--<h2>Author name: {{author/name}}</h2>-->
+<!--<h2>Author age: {{author/age}}</h2>-->
+<!--<h1>{{poem.title}}</h1>-->
+<!--{{link "Подробнее..." poem.url}}-->
+<!--{{#list people}}{{firstName}} {{lastName}}{{/list}}-->
+<!--</div>-->
+<!--</script>-->
+<!--Testing ends here-->
+
+<!--Staring working template-->
+<script id="hw11-template" type="text/x-handlebars-template">
+    <style>
+        li.hidden{
+            display: none;
+        }
+    </style>
+    <h1>Cities DOM built</h1>
+    <input type="text" id="myInput">
+    <div class="cities">
+        {{#list cities}} {{name}} {{/list}}
+    </div>
+</script>
+
+
+<script src="js/hw11.js"></script>
+</body>
+</html>

@@ -103,7 +103,7 @@
     var citiesArray = [];
 
     getAJAX('https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json').then(function (response) {
-            cities = JSON.parse(response);
+            var cities = JSON.parse(response);
             console.log(cities);
             cities.forEach(function (i, item) {
                 for (var key in cities[item]) {

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW #11_2</title>
+    <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+    VK.init({
+        apiId: 5759101
+    });
+    VK.Auth.login(function(response) {
+        if (response.session) {
+            console.log('всё ок!');
+            console.log(response)
+            VK.api('friends.get', {'order':'name'}, function (response) {
+
+                console.log(response);
+            })
+        } else {
+            alert('Не удалось авторизоваться');
+        }
+    }, 8 | 2);
+</script>
+</body>
+</html>
